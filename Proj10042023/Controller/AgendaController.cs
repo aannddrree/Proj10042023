@@ -15,9 +15,24 @@ namespace Proj10042023.Controller
             return new AgendaService().Inserir(agenda);
         }
 
+        public bool Atualizar(Agenda agenda)
+        {
+            return new AgendaService().Atualizar(agenda);
+        }
+
+        public bool Deletar(int id)
+        {
+            return new AgendaService().Deletar(id);
+        }
+
         public List<Agenda> TodosOsRegistros()
         {
             return new AgendaService().TodosOsRegistros();
+        }
+
+        public Agenda ConsultarPorId(int id)
+        {
+            return new AgendaService().ConsultarPorId(id);
         }
     }
 }
